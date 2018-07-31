@@ -13,7 +13,7 @@ todos = db['User']
 
 @app.route("/")
 def tasks():
-	return 'Teste'
+	return str(todos.count())
 
 wsgi_app = app.wsgi_app
 
